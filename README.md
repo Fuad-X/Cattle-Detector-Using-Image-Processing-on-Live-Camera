@@ -1,0 +1,1 @@
+Before starting this project please download https://www.kaggle.com/datasets/anandkumarsahu09/cattle-breeds-dataset this dataset and add the files after making a directory named data in the project directory. 
