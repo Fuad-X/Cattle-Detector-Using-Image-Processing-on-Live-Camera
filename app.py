@@ -53,11 +53,9 @@ def generate_frames():
         if not success:
             break
 
-        # Convert the frame to JPEG format
         ret, buffer = cv2.imencode('.jpg', frame)
         frame = buffer.tobytes()
 
-        # Yield the frame in byte format
         yield (b'--frame\r\n'
                b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n')
 
